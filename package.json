@@ -1,0 +1,45 @@
+{
+  "name": "MiqExperimentalUI",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "jest app/javascript",
+    "test:watch": "jest app/javascript --watchAll",
+    "test:current": "jest app/javascript --watch",
+    "format":
+      "prettier --single-quote --trailing-comma es5 --write 'app/javascript/**/*.js' '*.{js,json}'",
+    "build": "yarn run format && yarn run lint",
+    "lint": "eslint --fix app/javascript || exit 0"
+  },
+  "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "enzyme-to-json": "^3.1.2",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.2.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "prettier": "^1.7.4",
+    "react-test-renderer": "^16.0.0"
+  },
+  "dependencies": {
+    "cx": "^17.10.15",
+    "patternfly": "^3.29.5",
+    "patternfly-react": "^0.8.1",
+    "react": "^16.0.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "jest": {
+    "setupFiles": ["raf/polyfill"]
+  },
+  "license": "Apache-2.0"
+}
