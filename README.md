@@ -1,5 +1,7 @@
 # ManageIQ Experimental UI plugin
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ohadlevy/miq_experimental_ui_plugin.svg)](https://greenkeeper.io/)
+
 The aim of this plugin is to provide modern UI infrastructure for UI developers working on ManageIQ
 
 ## Current features
