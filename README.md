@@ -7,6 +7,12 @@ The aim of this plugin is to provide modern UI infrastructure for UI developers 
 
 ## Current features
 
+### Quick demo
+
+
+![Demo](docs/images/quick_demo.gif)
+
+
 * Allow per plugin package.json to include your own kind of dependencies.
 * Supports webpack based development with hot live reload (Core feature - PR at https://github.com/ManageIQ/manageiq-ui-classic/pull/2545)
 * Uses React component registry (currently from https://github.com/ohadlevy/manageiq-ui-classic/tree/2132) - it's aim is
