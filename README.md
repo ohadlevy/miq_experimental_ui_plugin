@@ -1,5 +1,6 @@
 # ManageIQ Experimental UI plugin
 
+[![Build Status](https://travis-ci.org/travis-ci/travis-web.svg?branch=ps-repo-filtering-slug-refactoring)](https://travis-ci.org/travis-ci/travis-web)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ohadlevy/miq_experimental_ui_plugin.svg)](https://greenkeeper.io/)
 
 The aim of this plugin is to provide modern UI infrastructure for UI developers working on ManageIQ
