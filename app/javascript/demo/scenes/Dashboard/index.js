@@ -1,16 +1,20 @@
 import React from 'react';
 import { ListView, ListViewItem, ListViewIcon } from 'patternfly-react';
 import { Row, Col } from 'react-bootstrap';
-import { mockListItems, renderActions, renderAdditionalInfoItems } from './__mocks__/mockListItems';
+import {
+  mockListItems,
+  renderActions,
+  renderAdditionalInfoItems,
+} from './__mocks__/mockListItems';
 
 export default () => (
   <div>
     <h1>Dashboard Page</h1>
 
     <ListView>
-      {mockListItems.map(item => (
+      {mockListItems.map((item, index) => (
         <ListViewItem
-          key={item.title}
+          key={index}
           actions={renderActions(item.actions)}
           checkboxInput={<input type="checkbox" />}
           leftContent={<ListViewIcon icon="fa fa-plane" />}

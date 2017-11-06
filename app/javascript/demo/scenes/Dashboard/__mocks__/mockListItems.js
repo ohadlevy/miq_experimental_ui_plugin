@@ -70,7 +70,7 @@ export const renderActions = () => (
 
 export const renderAdditionalInfoItems = itemProperties =>
   itemProperties &&
-  Object.keys(itemProperties).map((prop) => {
+  Object.keys(itemProperties).map(prop => {
     const classNames = cx('pficon', {
       'pficon-flavor': prop === 'hosts',
       'pficon-cluster': prop === 'clusters',

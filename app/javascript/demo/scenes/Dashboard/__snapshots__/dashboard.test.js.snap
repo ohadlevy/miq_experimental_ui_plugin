@@ -1119,14 +1119,12 @@ exports[`Nav component renders the navigation 1`] = `
               </Button>
             </div>
           }
-          additionalInfo={undefined}
           checkboxInput={
             <input
               type="checkbox"
             />
           }
           description="This is Item without heading"
-          heading={undefined}
           key="3"
           leftContent={
             <ListViewIcon
@@ -1171,14 +1169,12 @@ exports[`Nav component renders the navigation 1`] = `
                         </Button>
                       </div>
                     }
-                    additionalInfo={undefined}
                     checkboxInput={
                       <input
                         type="checkbox"
                       />
                     }
                     description="This is Item without heading"
-                    heading={undefined}
                     leftContent={
                       <ListViewIcon
                         icon="fa fa-plane"
@@ -1356,8 +1352,6 @@ exports[`Nav component renders the navigation 1`] = `
               type="checkbox"
             />
           }
-          description={undefined}
-          heading={undefined}
           key="4"
           leftContent={
             <ListViewIcon
@@ -1459,8 +1453,6 @@ exports[`Nav component renders the navigation 1`] = `
                         type="checkbox"
                       />
                     }
-                    description={undefined}
-                    heading={undefined}
                     leftContent={
                       <ListViewIcon
                         icon="fa fa-plane"
@@ -1646,13 +1638,11 @@ exports[`Nav component renders the navigation 1`] = `
               </Button>
             </div>
           }
-          additionalInfo={undefined}
           checkboxInput={
             <input
               type="checkbox"
             />
           }
-          description={undefined}
           heading="Item without description"
           key="5"
           leftContent={
@@ -1698,13 +1688,11 @@ exports[`Nav component renders the navigation 1`] = `
                         </Button>
                       </div>
                     }
-                    additionalInfo={undefined}
                     checkboxInput={
                       <input
                         type="checkbox"
                       />
                     }
-                    description={undefined}
                     heading="Item without description"
                     leftContent={
                       <ListViewIcon
