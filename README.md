@@ -12,6 +12,7 @@ have an official API how to publish top level reuseable components and how to co
 * Uses patternfly-react
 * Uses ReactRouter and integration with rails routes so it can refresh the URL back to the same page
 * Uses Jest with snapshot testing
+* Adds Patternfly list-view page as a demo
 
 ## TODO
 * Add Redux Support
