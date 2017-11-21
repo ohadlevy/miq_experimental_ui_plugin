@@ -44,7 +44,7 @@
     "react-router-dom": "^4.2.2"
   },
   "jest": {
-    "setupFiles": ["raf/polyfill"]
+    "setupFiles": ["raf/polyfill", "./.jest-setup.js"]
   },
   "license": "Apache-2.0"
 }
