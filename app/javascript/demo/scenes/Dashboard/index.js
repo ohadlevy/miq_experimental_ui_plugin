@@ -1,11 +1,7 @@
 import React from 'react';
-import { ListView, ListViewItem, ListViewIcon } from 'patternfly-react';
+import { ListView } from 'patternfly-react';
 import { Row, Col } from 'react-bootstrap';
-import {
-  mockListItems,
-  renderActions,
-  renderAdditionalInfoItems,
-} from './__mocks__/mockListItems';
+import { mockListItems, renderActions, renderAdditionalInfoItems } from './__mocks__/mockListItems';
 
 export default () => (
   <div>
@@ -13,11 +9,11 @@ export default () => (
 
     <ListView>
       {mockListItems.map((item, index) => (
-        <ListViewItem
+        <ListView.Item
           key={index}
           actions={renderActions(item.actions)}
           checkboxInput={<input type="checkbox" />}
-          leftContent={<ListViewIcon icon="fa fa-plane" />}
+          leftContent={<ListView.Icon name="plane" />}
           additionalInfo={renderAdditionalInfoItems(item.properties)}
           heading={item.title}
           description={item.description}
@@ -26,7 +22,7 @@ export default () => (
           <Row>
             <Col sm={11}>{item.expandedContentText}</Col>
           </Row>
-        </ListViewItem>
+        </ListView.Item>
       ))}
     </ListView>
   </div>
