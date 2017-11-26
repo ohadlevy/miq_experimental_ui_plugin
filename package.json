@@ -32,7 +32,7 @@
     "prettier": "^1.7.4",
     "react-test-renderer": "^16.0.0",
     "stylelint": "^8.2.0",
-    "stylelint-config-standard": "^17.0.0"
+    "stylelint-config-standard": "^18.0.0"
   },
   "dependencies": {
     "cx": "^17.10.15",
