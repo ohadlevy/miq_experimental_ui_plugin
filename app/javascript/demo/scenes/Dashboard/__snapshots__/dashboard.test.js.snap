@@ -189,186 +189,183 @@ exports[`Nav component renders the navigation 1`] = `
                       />
                     }
                   >
-                    <div
-                      style={
-                        Object {
-                          "display": "flex",
-                          "flex": 1,
-                        }
-                      }
+                    <ListViewCheckbox
+                      key="checkbox"
                     >
-                      <ListViewCheckbox>
-                        <div
-                          className="list-view-pf-checkbox"
-                        >
-                          <input
-                            type="checkbox"
-                          />
-                        </div>
-                      </ListViewCheckbox>
-                      <ListViewActions>
-                        <div
-                          className="list-view-pf-actions"
-                        >
-                          <div>
-                            <Button>
-                              <Button
-                                active={false}
-                                block={false}
-                                bsClass="btn"
-                                bsStyle="default"
-                                disabled={false}
-                              >
-                                <button
-                                  className="btn btn-default"
-                                  disabled={false}
-                                  type="button"
-                                >
-                                  Details
-                                </button>
-                              </Button>
-                            </Button>
-                          </div>
-                        </div>
-                      </ListViewActions>
-                      <ListViewMainInfo>
-                        <div
-                          className="list-view-pf-main-info"
-                        >
-                          <ListViewLeft>
-                            <div
-                              className="list-view-pf-left"
+                      <div
+                        className="list-view-pf-checkbox"
+                      >
+                        <input
+                          type="checkbox"
+                        />
+                      </div>
+                    </ListViewCheckbox>
+                    <ListViewActions
+                      key="actions"
+                    >
+                      <div
+                        className="list-view-pf-actions"
+                      >
+                        <div>
+                          <Button>
+                            <Button
+                              active={false}
+                              block={false}
+                              bsClass="btn"
+                              bsStyle="default"
+                              disabled={false}
                             >
-                              <ListViewIcon
+                              <button
+                                className="btn btn-default"
+                                disabled={false}
+                                type="button"
+                              >
+                                Details
+                              </button>
+                            </Button>
+                          </Button>
+                        </div>
+                      </div>
+                    </ListViewActions>
+                    <ListViewMainInfo
+                      key="main_info"
+                    >
+                      <div
+                        className="list-view-pf-main-info"
+                      >
+                        <ListViewLeft>
+                          <div
+                            className="list-view-pf-left"
+                          >
+                            <ListViewIcon
+                              name="plane"
+                              size="sm"
+                              type="fa"
+                            >
+                              <Icon
+                                className="list-view-pf-icon-sm"
                                 name="plane"
-                                size="sm"
                                 type="fa"
                               >
-                                <Icon
+                                <FontAwesome
                                   className="list-view-pf-icon-sm"
                                   name="plane"
-                                  type="fa"
                                 >
-                                  <FontAwesome
-                                    className="list-view-pf-icon-sm"
-                                    name="plane"
+                                  <span
+                                    aria-hidden={true}
+                                    className="fa fa-plane list-view-pf-icon-sm"
+                                  />
+                                </FontAwesome>
+                              </Icon>
+                            </ListViewIcon>
+                          </div>
+                        </ListViewLeft>
+                        <ListViewBody>
+                          <div
+                            className="list-view-pf-body"
+                          >
+                            <ListViewDescription>
+                              <div
+                                className="list-view-pf-description"
+                              >
+                                <ListViewDescriptionHeading>
+                                  <div
+                                    className="list-group-item-heading"
+                                  >
+                                    Item 1
+                                  </div>
+                                </ListViewDescriptionHeading>
+                                <ListViewDescriptionText>
+                                  <div
+                                    className="list-group-item-text"
+                                  >
+                                    This is Item 1 description
+                                  </div>
+                                </ListViewDescriptionText>
+                              </div>
+                            </ListViewDescription>
+                            <ListViewAdditionalInfo>
+                              <div
+                                className="list-view-pf-additional-info"
+                              >
+                                <ListViewInfoItem
+                                  key="hosts"
+                                  stacked={false}
+                                >
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
                                     <span
-                                      aria-hidden={true}
-                                      className="fa fa-plane list-view-pf-icon-sm"
+                                      className="pficon pficon-flavor"
                                     />
-                                  </FontAwesome>
-                                </Icon>
-                              </ListViewIcon>
-                            </div>
-                          </ListViewLeft>
-                          <ListViewBody>
-                            <div
-                              className="list-view-pf-body"
-                            >
-                              <ListViewDescription>
-                                <div
-                                  className="list-view-pf-description"
+                                    <strong>
+                                      3
+                                    </strong>
+                                     
+                                    hosts
+                                  </div>
+                                </ListViewInfoItem>
+                                <ListViewInfoItem
+                                  key="clusters"
+                                  stacked={false}
                                 >
-                                  <ListViewDescriptionHeading>
-                                    <div
-                                      className="list-group-item-heading"
-                                    >
-                                      Item 1
-                                    </div>
-                                  </ListViewDescriptionHeading>
-                                  <ListViewDescriptionText>
-                                    <div
-                                      className="list-group-item-text"
-                                    >
-                                      This is Item 1 description
-                                    </div>
-                                  </ListViewDescriptionText>
-                                </div>
-                              </ListViewDescription>
-                              <ListViewAdditionalInfo>
-                                <div
-                                  className="list-view-pf-additional-info"
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
+                                  >
+                                    <span
+                                      className="pficon pficon-cluster"
+                                    />
+                                    <strong>
+                                      1
+                                    </strong>
+                                     
+                                    clusters
+                                  </div>
+                                </ListViewInfoItem>
+                                <ListViewInfoItem
+                                  key="nodes"
+                                  stacked={false}
                                 >
-                                  <ListViewInfoItem
-                                    key="hosts"
-                                    stacked={false}
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-flavor"
-                                      />
-                                      <strong>
-                                        3
-                                      </strong>
-                                       
-                                      hosts
-                                    </div>
-                                  </ListViewInfoItem>
-                                  <ListViewInfoItem
-                                    key="clusters"
-                                    stacked={false}
+                                    <span
+                                      className="pficon pficon-container-node"
+                                    />
+                                    <strong>
+                                      7
+                                    </strong>
+                                     
+                                    nodes
+                                  </div>
+                                </ListViewInfoItem>
+                                <ListViewInfoItem
+                                  key="images"
+                                  stacked={false}
+                                >
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-cluster"
-                                      />
-                                      <strong>
-                                        1
-                                      </strong>
-                                       
-                                      clusters
-                                    </div>
-                                  </ListViewInfoItem>
-                                  <ListViewInfoItem
-                                    key="nodes"
-                                    stacked={false}
-                                  >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-container-node"
-                                      />
-                                      <strong>
-                                        7
-                                      </strong>
-                                       
-                                      nodes
-                                    </div>
-                                  </ListViewInfoItem>
-                                  <ListViewInfoItem
-                                    key="images"
-                                    stacked={false}
-                                  >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-image"
-                                      />
-                                      <strong>
-                                        4
-                                      </strong>
-                                       
-                                      images
-                                    </div>
-                                  </ListViewInfoItem>
-                                </div>
-                              </ListViewAdditionalInfo>
-                            </div>
-                          </ListViewBody>
-                        </div>
-                      </ListViewMainInfo>
-                    </div>
+                                    <span
+                                      className="pficon pficon-image"
+                                    />
+                                    <strong>
+                                      4
+                                    </strong>
+                                     
+                                    images
+                                  </div>
+                                </ListViewInfoItem>
+                              </div>
+                            </ListViewAdditionalInfo>
+                          </div>
+                        </ListViewBody>
+                      </div>
+                    </ListViewMainInfo>
                   </ListViewRow>
                 </div>
               </ListViewGroupItemHeader>
@@ -571,186 +568,183 @@ exports[`Nav component renders the navigation 1`] = `
                       />
                     }
                   >
-                    <div
-                      style={
-                        Object {
-                          "display": "flex",
-                          "flex": 1,
-                        }
-                      }
+                    <ListViewCheckbox
+                      key="checkbox"
                     >
-                      <ListViewCheckbox>
-                        <div
-                          className="list-view-pf-checkbox"
-                        >
-                          <input
-                            type="checkbox"
-                          />
-                        </div>
-                      </ListViewCheckbox>
-                      <ListViewActions>
-                        <div
-                          className="list-view-pf-actions"
-                        >
-                          <div>
-                            <Button>
-                              <Button
-                                active={false}
-                                block={false}
-                                bsClass="btn"
-                                bsStyle="default"
-                                disabled={false}
-                              >
-                                <button
-                                  className="btn btn-default"
-                                  disabled={false}
-                                  type="button"
-                                >
-                                  Details
-                                </button>
-                              </Button>
-                            </Button>
-                          </div>
-                        </div>
-                      </ListViewActions>
-                      <ListViewMainInfo>
-                        <div
-                          className="list-view-pf-main-info"
-                        >
-                          <ListViewLeft>
-                            <div
-                              className="list-view-pf-left"
+                      <div
+                        className="list-view-pf-checkbox"
+                      >
+                        <input
+                          type="checkbox"
+                        />
+                      </div>
+                    </ListViewCheckbox>
+                    <ListViewActions
+                      key="actions"
+                    >
+                      <div
+                        className="list-view-pf-actions"
+                      >
+                        <div>
+                          <Button>
+                            <Button
+                              active={false}
+                              block={false}
+                              bsClass="btn"
+                              bsStyle="default"
+                              disabled={false}
                             >
-                              <ListViewIcon
+                              <button
+                                className="btn btn-default"
+                                disabled={false}
+                                type="button"
+                              >
+                                Details
+                              </button>
+                            </Button>
+                          </Button>
+                        </div>
+                      </div>
+                    </ListViewActions>
+                    <ListViewMainInfo
+                      key="main_info"
+                    >
+                      <div
+                        className="list-view-pf-main-info"
+                      >
+                        <ListViewLeft>
+                          <div
+                            className="list-view-pf-left"
+                          >
+                            <ListViewIcon
+                              name="plane"
+                              size="sm"
+                              type="fa"
+                            >
+                              <Icon
+                                className="list-view-pf-icon-sm"
                                 name="plane"
-                                size="sm"
                                 type="fa"
                               >
-                                <Icon
+                                <FontAwesome
                                   className="list-view-pf-icon-sm"
                                   name="plane"
-                                  type="fa"
                                 >
-                                  <FontAwesome
-                                    className="list-view-pf-icon-sm"
-                                    name="plane"
+                                  <span
+                                    aria-hidden={true}
+                                    className="fa fa-plane list-view-pf-icon-sm"
+                                  />
+                                </FontAwesome>
+                              </Icon>
+                            </ListViewIcon>
+                          </div>
+                        </ListViewLeft>
+                        <ListViewBody>
+                          <div
+                            className="list-view-pf-body"
+                          >
+                            <ListViewDescription>
+                              <div
+                                className="list-view-pf-description"
+                              >
+                                <ListViewDescriptionHeading>
+                                  <div
+                                    className="list-group-item-heading"
+                                  >
+                                    Item 2
+                                  </div>
+                                </ListViewDescriptionHeading>
+                                <ListViewDescriptionText>
+                                  <div
+                                    className="list-group-item-text"
+                                  >
+                                    This is Item 2 description
+                                  </div>
+                                </ListViewDescriptionText>
+                              </div>
+                            </ListViewDescription>
+                            <ListViewAdditionalInfo>
+                              <div
+                                className="list-view-pf-additional-info"
+                              >
+                                <ListViewInfoItem
+                                  key="hosts"
+                                  stacked={false}
+                                >
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
                                     <span
-                                      aria-hidden={true}
-                                      className="fa fa-plane list-view-pf-icon-sm"
+                                      className="pficon pficon-flavor"
                                     />
-                                  </FontAwesome>
-                                </Icon>
-                              </ListViewIcon>
-                            </div>
-                          </ListViewLeft>
-                          <ListViewBody>
-                            <div
-                              className="list-view-pf-body"
-                            >
-                              <ListViewDescription>
-                                <div
-                                  className="list-view-pf-description"
+                                    <strong>
+                                      2
+                                    </strong>
+                                     
+                                    hosts
+                                  </div>
+                                </ListViewInfoItem>
+                                <ListViewInfoItem
+                                  key="clusters"
+                                  stacked={false}
                                 >
-                                  <ListViewDescriptionHeading>
-                                    <div
-                                      className="list-group-item-heading"
-                                    >
-                                      Item 2
-                                    </div>
-                                  </ListViewDescriptionHeading>
-                                  <ListViewDescriptionText>
-                                    <div
-                                      className="list-group-item-text"
-                                    >
-                                      This is Item 2 description
-                                    </div>
-                                  </ListViewDescriptionText>
-                                </div>
-                              </ListViewDescription>
-                              <ListViewAdditionalInfo>
-                                <div
-                                  className="list-view-pf-additional-info"
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
+                                  >
+                                    <span
+                                      className="pficon pficon-cluster"
+                                    />
+                                    <strong>
+                                      1
+                                    </strong>
+                                     
+                                    clusters
+                                  </div>
+                                </ListViewInfoItem>
+                                <ListViewInfoItem
+                                  key="nodes"
+                                  stacked={false}
                                 >
-                                  <ListViewInfoItem
-                                    key="hosts"
-                                    stacked={false}
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-flavor"
-                                      />
-                                      <strong>
-                                        2
-                                      </strong>
-                                       
-                                      hosts
-                                    </div>
-                                  </ListViewInfoItem>
-                                  <ListViewInfoItem
-                                    key="clusters"
-                                    stacked={false}
+                                    <span
+                                      className="pficon pficon-container-node"
+                                    />
+                                    <strong>
+                                      11
+                                    </strong>
+                                     
+                                    nodes
+                                  </div>
+                                </ListViewInfoItem>
+                                <ListViewInfoItem
+                                  key="images"
+                                  stacked={false}
+                                >
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-cluster"
-                                      />
-                                      <strong>
-                                        1
-                                      </strong>
-                                       
-                                      clusters
-                                    </div>
-                                  </ListViewInfoItem>
-                                  <ListViewInfoItem
-                                    key="nodes"
-                                    stacked={false}
-                                  >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-container-node"
-                                      />
-                                      <strong>
-                                        11
-                                      </strong>
-                                       
-                                      nodes
-                                    </div>
-                                  </ListViewInfoItem>
-                                  <ListViewInfoItem
-                                    key="images"
-                                    stacked={false}
-                                  >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-image"
-                                      />
-                                      <strong>
-                                        8
-                                      </strong>
-                                       
-                                      images
-                                    </div>
-                                  </ListViewInfoItem>
-                                </div>
-                              </ListViewAdditionalInfo>
-                            </div>
-                          </ListViewBody>
-                        </div>
-                      </ListViewMainInfo>
-                    </div>
+                                    <span
+                                      className="pficon pficon-image"
+                                    />
+                                    <strong>
+                                      8
+                                    </strong>
+                                     
+                                    images
+                                  </div>
+                                </ListViewInfoItem>
+                              </div>
+                            </ListViewAdditionalInfo>
+                          </div>
+                        </ListViewBody>
+                      </div>
+                    </ListViewMainInfo>
                   </ListViewRow>
                 </div>
               </ListViewGroupItemHeader>
@@ -953,186 +947,183 @@ exports[`Nav component renders the navigation 1`] = `
                       />
                     }
                   >
-                    <div
-                      style={
-                        Object {
-                          "display": "flex",
-                          "flex": 1,
-                        }
-                      }
+                    <ListViewCheckbox
+                      key="checkbox"
                     >
-                      <ListViewCheckbox>
-                        <div
-                          className="list-view-pf-checkbox"
-                        >
-                          <input
-                            type="checkbox"
-                          />
-                        </div>
-                      </ListViewCheckbox>
-                      <ListViewActions>
-                        <div
-                          className="list-view-pf-actions"
-                        >
-                          <div>
-                            <Button>
-                              <Button
-                                active={false}
-                                block={false}
-                                bsClass="btn"
-                                bsStyle="default"
-                                disabled={false}
-                              >
-                                <button
-                                  className="btn btn-default"
-                                  disabled={false}
-                                  type="button"
-                                >
-                                  Details
-                                </button>
-                              </Button>
-                            </Button>
-                          </div>
-                        </div>
-                      </ListViewActions>
-                      <ListViewMainInfo>
-                        <div
-                          className="list-view-pf-main-info"
-                        >
-                          <ListViewLeft>
-                            <div
-                              className="list-view-pf-left"
+                      <div
+                        className="list-view-pf-checkbox"
+                      >
+                        <input
+                          type="checkbox"
+                        />
+                      </div>
+                    </ListViewCheckbox>
+                    <ListViewActions
+                      key="actions"
+                    >
+                      <div
+                        className="list-view-pf-actions"
+                      >
+                        <div>
+                          <Button>
+                            <Button
+                              active={false}
+                              block={false}
+                              bsClass="btn"
+                              bsStyle="default"
+                              disabled={false}
                             >
-                              <ListViewIcon
+                              <button
+                                className="btn btn-default"
+                                disabled={false}
+                                type="button"
+                              >
+                                Details
+                              </button>
+                            </Button>
+                          </Button>
+                        </div>
+                      </div>
+                    </ListViewActions>
+                    <ListViewMainInfo
+                      key="main_info"
+                    >
+                      <div
+                        className="list-view-pf-main-info"
+                      >
+                        <ListViewLeft>
+                          <div
+                            className="list-view-pf-left"
+                          >
+                            <ListViewIcon
+                              name="plane"
+                              size="sm"
+                              type="fa"
+                            >
+                              <Icon
+                                className="list-view-pf-icon-sm"
                                 name="plane"
-                                size="sm"
                                 type="fa"
                               >
-                                <Icon
+                                <FontAwesome
                                   className="list-view-pf-icon-sm"
                                   name="plane"
-                                  type="fa"
                                 >
-                                  <FontAwesome
-                                    className="list-view-pf-icon-sm"
-                                    name="plane"
+                                  <span
+                                    aria-hidden={true}
+                                    className="fa fa-plane list-view-pf-icon-sm"
+                                  />
+                                </FontAwesome>
+                              </Icon>
+                            </ListViewIcon>
+                          </div>
+                        </ListViewLeft>
+                        <ListViewBody>
+                          <div
+                            className="list-view-pf-body"
+                          >
+                            <ListViewDescription>
+                              <div
+                                className="list-view-pf-description"
+                              >
+                                <ListViewDescriptionHeading>
+                                  <div
+                                    className="list-group-item-heading"
+                                  >
+                                    Item 3
+                                  </div>
+                                </ListViewDescriptionHeading>
+                                <ListViewDescriptionText>
+                                  <div
+                                    className="list-group-item-text"
+                                  >
+                                    This is Item 3 description
+                                  </div>
+                                </ListViewDescriptionText>
+                              </div>
+                            </ListViewDescription>
+                            <ListViewAdditionalInfo>
+                              <div
+                                className="list-view-pf-additional-info"
+                              >
+                                <ListViewInfoItem
+                                  key="hosts"
+                                  stacked={false}
+                                >
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
                                     <span
-                                      aria-hidden={true}
-                                      className="fa fa-plane list-view-pf-icon-sm"
+                                      className="pficon pficon-flavor"
                                     />
-                                  </FontAwesome>
-                                </Icon>
-                              </ListViewIcon>
-                            </div>
-                          </ListViewLeft>
-                          <ListViewBody>
-                            <div
-                              className="list-view-pf-body"
-                            >
-                              <ListViewDescription>
-                                <div
-                                  className="list-view-pf-description"
+                                    <strong>
+                                      4
+                                    </strong>
+                                     
+                                    hosts
+                                  </div>
+                                </ListViewInfoItem>
+                                <ListViewInfoItem
+                                  key="clusters"
+                                  stacked={false}
                                 >
-                                  <ListViewDescriptionHeading>
-                                    <div
-                                      className="list-group-item-heading"
-                                    >
-                                      Item 3
-                                    </div>
-                                  </ListViewDescriptionHeading>
-                                  <ListViewDescriptionText>
-                                    <div
-                                      className="list-group-item-text"
-                                    >
-                                      This is Item 3 description
-                                    </div>
-                                  </ListViewDescriptionText>
-                                </div>
-                              </ListViewDescription>
-                              <ListViewAdditionalInfo>
-                                <div
-                                  className="list-view-pf-additional-info"
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
+                                  >
+                                    <span
+                                      className="pficon pficon-cluster"
+                                    />
+                                    <strong>
+                                      2
+                                    </strong>
+                                     
+                                    clusters
+                                  </div>
+                                </ListViewInfoItem>
+                                <ListViewInfoItem
+                                  key="nodes"
+                                  stacked={false}
                                 >
-                                  <ListViewInfoItem
-                                    key="hosts"
-                                    stacked={false}
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-flavor"
-                                      />
-                                      <strong>
-                                        4
-                                      </strong>
-                                       
-                                      hosts
-                                    </div>
-                                  </ListViewInfoItem>
-                                  <ListViewInfoItem
-                                    key="clusters"
-                                    stacked={false}
+                                    <span
+                                      className="pficon pficon-container-node"
+                                    />
+                                    <strong>
+                                      9
+                                    </strong>
+                                     
+                                    nodes
+                                  </div>
+                                </ListViewInfoItem>
+                                <ListViewInfoItem
+                                  key="images"
+                                  stacked={false}
+                                >
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-cluster"
-                                      />
-                                      <strong>
-                                        2
-                                      </strong>
-                                       
-                                      clusters
-                                    </div>
-                                  </ListViewInfoItem>
-                                  <ListViewInfoItem
-                                    key="nodes"
-                                    stacked={false}
-                                  >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-container-node"
-                                      />
-                                      <strong>
-                                        9
-                                      </strong>
-                                       
-                                      nodes
-                                    </div>
-                                  </ListViewInfoItem>
-                                  <ListViewInfoItem
-                                    key="images"
-                                    stacked={false}
-                                  >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-image"
-                                      />
-                                      <strong>
-                                        8
-                                      </strong>
-                                       
-                                      images
-                                    </div>
-                                  </ListViewInfoItem>
-                                </div>
-                              </ListViewAdditionalInfo>
-                            </div>
-                          </ListViewBody>
-                        </div>
-                      </ListViewMainInfo>
-                    </div>
+                                    <span
+                                      className="pficon pficon-image"
+                                    />
+                                    <strong>
+                                      8
+                                    </strong>
+                                     
+                                    images
+                                  </div>
+                                </ListViewInfoItem>
+                              </div>
+                            </ListViewAdditionalInfo>
+                          </div>
+                        </ListViewBody>
+                      </div>
+                    </ListViewMainInfo>
                   </ListViewRow>
                 </div>
               </ListViewGroupItemHeader>
@@ -1229,101 +1220,98 @@ exports[`Nav component renders the navigation 1`] = `
                       />
                     }
                   >
-                    <div
-                      style={
-                        Object {
-                          "display": "flex",
-                          "flex": 1,
-                        }
-                      }
+                    <ListViewCheckbox
+                      key="checkbox"
                     >
-                      <ListViewCheckbox>
-                        <div
-                          className="list-view-pf-checkbox"
-                        >
-                          <input
-                            type="checkbox"
-                          />
-                        </div>
-                      </ListViewCheckbox>
-                      <ListViewActions>
-                        <div
-                          className="list-view-pf-actions"
-                        >
-                          <div>
-                            <Button>
-                              <Button
-                                active={false}
-                                block={false}
-                                bsClass="btn"
-                                bsStyle="default"
-                                disabled={false}
-                              >
-                                <button
-                                  className="btn btn-default"
-                                  disabled={false}
-                                  type="button"
-                                >
-                                  Details
-                                </button>
-                              </Button>
-                            </Button>
-                          </div>
-                        </div>
-                      </ListViewActions>
-                      <ListViewMainInfo>
-                        <div
-                          className="list-view-pf-main-info"
-                        >
-                          <ListViewLeft>
-                            <div
-                              className="list-view-pf-left"
+                      <div
+                        className="list-view-pf-checkbox"
+                      >
+                        <input
+                          type="checkbox"
+                        />
+                      </div>
+                    </ListViewCheckbox>
+                    <ListViewActions
+                      key="actions"
+                    >
+                      <div
+                        className="list-view-pf-actions"
+                      >
+                        <div>
+                          <Button>
+                            <Button
+                              active={false}
+                              block={false}
+                              bsClass="btn"
+                              bsStyle="default"
+                              disabled={false}
                             >
-                              <ListViewIcon
+                              <button
+                                className="btn btn-default"
+                                disabled={false}
+                                type="button"
+                              >
+                                Details
+                              </button>
+                            </Button>
+                          </Button>
+                        </div>
+                      </div>
+                    </ListViewActions>
+                    <ListViewMainInfo
+                      key="main_info"
+                    >
+                      <div
+                        className="list-view-pf-main-info"
+                      >
+                        <ListViewLeft>
+                          <div
+                            className="list-view-pf-left"
+                          >
+                            <ListViewIcon
+                              name="plane"
+                              size="sm"
+                              type="fa"
+                            >
+                              <Icon
+                                className="list-view-pf-icon-sm"
                                 name="plane"
-                                size="sm"
                                 type="fa"
                               >
-                                <Icon
+                                <FontAwesome
                                   className="list-view-pf-icon-sm"
                                   name="plane"
-                                  type="fa"
                                 >
-                                  <FontAwesome
-                                    className="list-view-pf-icon-sm"
-                                    name="plane"
+                                  <span
+                                    aria-hidden={true}
+                                    className="fa fa-plane list-view-pf-icon-sm"
+                                  />
+                                </FontAwesome>
+                              </Icon>
+                            </ListViewIcon>
+                          </div>
+                        </ListViewLeft>
+                        <ListViewBody>
+                          <div
+                            className="list-view-pf-body"
+                          >
+                            <ListViewDescription>
+                              <div
+                                className="list-view-pf-description"
+                              >
+                                <ListViewDescriptionText>
+                                  <div
+                                    className="list-group-item-text"
                                   >
-                                    <span
-                                      aria-hidden={true}
-                                      className="fa fa-plane list-view-pf-icon-sm"
-                                    />
-                                  </FontAwesome>
-                                </Icon>
-                              </ListViewIcon>
-                            </div>
-                          </ListViewLeft>
-                          <ListViewBody>
-                            <div
-                              className="list-view-pf-body"
-                            >
-                              <ListViewDescription>
-                                <div
-                                  className="list-view-pf-description"
-                                >
-                                  <ListViewDescriptionText>
-                                    <div
-                                      className="list-group-item-text"
-                                    >
-                                      This is Item without heading
-                                    </div>
-                                  </ListViewDescriptionText>
-                                </div>
-                              </ListViewDescription>
-                            </div>
-                          </ListViewBody>
-                        </div>
-                      </ListViewMainInfo>
-                    </div>
+                                    This is Item without heading
+                                  </div>
+                                </ListViewDescriptionText>
+                              </div>
+                            </ListViewDescription>
+                          </div>
+                        </ListViewBody>
+                      </div>
+                    </ListViewMainInfo>
                   </ListViewRow>
                 </div>
               </ListViewGroupItemHeader>
@@ -1522,166 +1510,163 @@ exports[`Nav component renders the navigation 1`] = `
                       />
                     }
                   >
-                    <div
-                      style={
-                        Object {
-                          "display": "flex",
-                          "flex": 1,
-                        }
-                      }
+                    <ListViewCheckbox
+                      key="checkbox"
                     >
-                      <ListViewCheckbox>
-                        <div
-                          className="list-view-pf-checkbox"
-                        >
-                          <input
-                            type="checkbox"
-                          />
-                        </div>
-                      </ListViewCheckbox>
-                      <ListViewActions>
-                        <div
-                          className="list-view-pf-actions"
-                        >
-                          <div>
-                            <Button>
-                              <Button
-                                active={false}
-                                block={false}
-                                bsClass="btn"
-                                bsStyle="default"
-                                disabled={false}
-                              >
-                                <button
-                                  className="btn btn-default"
-                                  disabled={false}
-                                  type="button"
-                                >
-                                  Details
-                                </button>
-                              </Button>
-                            </Button>
-                          </div>
-                        </div>
-                      </ListViewActions>
-                      <ListViewMainInfo>
-                        <div
-                          className="list-view-pf-main-info"
-                        >
-                          <ListViewLeft>
-                            <div
-                              className="list-view-pf-left"
+                      <div
+                        className="list-view-pf-checkbox"
+                      >
+                        <input
+                          type="checkbox"
+                        />
+                      </div>
+                    </ListViewCheckbox>
+                    <ListViewActions
+                      key="actions"
+                    >
+                      <div
+                        className="list-view-pf-actions"
+                      >
+                        <div>
+                          <Button>
+                            <Button
+                              active={false}
+                              block={false}
+                              bsClass="btn"
+                              bsStyle="default"
+                              disabled={false}
                             >
-                              <ListViewIcon
+                              <button
+                                className="btn btn-default"
+                                disabled={false}
+                                type="button"
+                              >
+                                Details
+                              </button>
+                            </Button>
+                          </Button>
+                        </div>
+                      </div>
+                    </ListViewActions>
+                    <ListViewMainInfo
+                      key="main_info"
+                    >
+                      <div
+                        className="list-view-pf-main-info"
+                      >
+                        <ListViewLeft>
+                          <div
+                            className="list-view-pf-left"
+                          >
+                            <ListViewIcon
+                              name="plane"
+                              size="sm"
+                              type="fa"
+                            >
+                              <Icon
+                                className="list-view-pf-icon-sm"
                                 name="plane"
-                                size="sm"
                                 type="fa"
                               >
-                                <Icon
+                                <FontAwesome
                                   className="list-view-pf-icon-sm"
                                   name="plane"
-                                  type="fa"
                                 >
-                                  <FontAwesome
-                                    className="list-view-pf-icon-sm"
-                                    name="plane"
+                                  <span
+                                    aria-hidden={true}
+                                    className="fa fa-plane list-view-pf-icon-sm"
+                                  />
+                                </FontAwesome>
+                              </Icon>
+                            </ListViewIcon>
+                          </div>
+                        </ListViewLeft>
+                        <ListViewBody>
+                          <div
+                            className="list-view-pf-body"
+                          >
+                            <ListViewAdditionalInfo>
+                              <div
+                                className="list-view-pf-additional-info"
+                              >
+                                <ListViewInfoItem
+                                  key="hosts"
+                                  stacked={false}
+                                >
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
                                     <span
-                                      aria-hidden={true}
-                                      className="fa fa-plane list-view-pf-icon-sm"
+                                      className="pficon pficon-flavor"
                                     />
-                                  </FontAwesome>
-                                </Icon>
-                              </ListViewIcon>
-                            </div>
-                          </ListViewLeft>
-                          <ListViewBody>
-                            <div
-                              className="list-view-pf-body"
-                            >
-                              <ListViewAdditionalInfo>
-                                <div
-                                  className="list-view-pf-additional-info"
+                                    <strong>
+                                      4
+                                    </strong>
+                                     
+                                    hosts
+                                  </div>
+                                </ListViewInfoItem>
+                                <ListViewInfoItem
+                                  key="clusters"
+                                  stacked={false}
                                 >
-                                  <ListViewInfoItem
-                                    key="hosts"
-                                    stacked={false}
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-flavor"
-                                      />
-                                      <strong>
-                                        4
-                                      </strong>
-                                       
-                                      hosts
-                                    </div>
-                                  </ListViewInfoItem>
-                                  <ListViewInfoItem
-                                    key="clusters"
-                                    stacked={false}
+                                    <span
+                                      className="pficon pficon-cluster"
+                                    />
+                                    <strong>
+                                      2
+                                    </strong>
+                                     
+                                    clusters
+                                  </div>
+                                </ListViewInfoItem>
+                                <ListViewInfoItem
+                                  key="nodes"
+                                  stacked={false}
+                                >
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-cluster"
-                                      />
-                                      <strong>
-                                        2
-                                      </strong>
-                                       
-                                      clusters
-                                    </div>
-                                  </ListViewInfoItem>
-                                  <ListViewInfoItem
-                                    key="nodes"
-                                    stacked={false}
+                                    <span
+                                      className="pficon pficon-container-node"
+                                    />
+                                    <strong>
+                                      9
+                                    </strong>
+                                     
+                                    nodes
+                                  </div>
+                                </ListViewInfoItem>
+                                <ListViewInfoItem
+                                  key="images"
+                                  stacked={false}
+                                >
+                                  <div
+                                    className="list-view-pf-additional-info-item"
+                                    onClick={[Function]}
                                   >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-container-node"
-                                      />
-                                      <strong>
-                                        9
-                                      </strong>
-                                       
-                                      nodes
-                                    </div>
-                                  </ListViewInfoItem>
-                                  <ListViewInfoItem
-                                    key="images"
-                                    stacked={false}
-                                  >
-                                    <div
-                                      className="list-view-pf-additional-info-item"
-                                      onClick={[Function]}
-                                    >
-                                      <span
-                                        className="pficon pficon-image"
-                                      />
-                                      <strong>
-                                        8
-                                      </strong>
-                                       
-                                      images
-                                    </div>
-                                  </ListViewInfoItem>
-                                </div>
-                              </ListViewAdditionalInfo>
-                            </div>
-                          </ListViewBody>
-                        </div>
-                      </ListViewMainInfo>
-                    </div>
+                                    <span
+                                      className="pficon pficon-image"
+                                    />
+                                    <strong>
+                                      8
+                                    </strong>
+                                     
+                                    images
+                                  </div>
+                                </ListViewInfoItem>
+                              </div>
+                            </ListViewAdditionalInfo>
+                          </div>
+                        </ListViewBody>
+                      </div>
+                    </ListViewMainInfo>
                   </ListViewRow>
                 </div>
               </ListViewGroupItemHeader>
@@ -1778,101 +1763,98 @@ exports[`Nav component renders the navigation 1`] = `
                       />
                     }
                   >
-                    <div
-                      style={
-                        Object {
-                          "display": "flex",
-                          "flex": 1,
-                        }
-                      }
+                    <ListViewCheckbox
+                      key="checkbox"
                     >
-                      <ListViewCheckbox>
-                        <div
-                          className="list-view-pf-checkbox"
-                        >
-                          <input
-                            type="checkbox"
-                          />
-                        </div>
-                      </ListViewCheckbox>
-                      <ListViewActions>
-                        <div
-                          className="list-view-pf-actions"
-                        >
-                          <div>
-                            <Button>
-                              <Button
-                                active={false}
-                                block={false}
-                                bsClass="btn"
-                                bsStyle="default"
-                                disabled={false}
-                              >
-                                <button
-                                  className="btn btn-default"
-                                  disabled={false}
-                                  type="button"
-                                >
-                                  Details
-                                </button>
-                              </Button>
-                            </Button>
-                          </div>
-                        </div>
-                      </ListViewActions>
-                      <ListViewMainInfo>
-                        <div
-                          className="list-view-pf-main-info"
-                        >
-                          <ListViewLeft>
-                            <div
-                              className="list-view-pf-left"
+                      <div
+                        className="list-view-pf-checkbox"
+                      >
+                        <input
+                          type="checkbox"
+                        />
+                      </div>
+                    </ListViewCheckbox>
+                    <ListViewActions
+                      key="actions"
+                    >
+                      <div
+                        className="list-view-pf-actions"
+                      >
+                        <div>
+                          <Button>
+                            <Button
+                              active={false}
+                              block={false}
+                              bsClass="btn"
+                              bsStyle="default"
+                              disabled={false}
                             >
-                              <ListViewIcon
+                              <button
+                                className="btn btn-default"
+                                disabled={false}
+                                type="button"
+                              >
+                                Details
+                              </button>
+                            </Button>
+                          </Button>
+                        </div>
+                      </div>
+                    </ListViewActions>
+                    <ListViewMainInfo
+                      key="main_info"
+                    >
+                      <div
+                        className="list-view-pf-main-info"
+                      >
+                        <ListViewLeft>
+                          <div
+                            className="list-view-pf-left"
+                          >
+                            <ListViewIcon
+                              name="plane"
+                              size="sm"
+                              type="fa"
+                            >
+                              <Icon
+                                className="list-view-pf-icon-sm"
                                 name="plane"
-                                size="sm"
                                 type="fa"
                               >
-                                <Icon
+                                <FontAwesome
                                   className="list-view-pf-icon-sm"
                                   name="plane"
-                                  type="fa"
                                 >
-                                  <FontAwesome
-                                    className="list-view-pf-icon-sm"
-                                    name="plane"
+                                  <span
+                                    aria-hidden={true}
+                                    className="fa fa-plane list-view-pf-icon-sm"
+                                  />
+                                </FontAwesome>
+                              </Icon>
+                            </ListViewIcon>
+                          </div>
+                        </ListViewLeft>
+                        <ListViewBody>
+                          <div
+                            className="list-view-pf-body"
+                          >
+                            <ListViewDescription>
+                              <div
+                                className="list-view-pf-description"
+                              >
+                                <ListViewDescriptionHeading>
+                                  <div
+                                    className="list-group-item-heading"
                                   >
-                                    <span
-                                      aria-hidden={true}
-                                      className="fa fa-plane list-view-pf-icon-sm"
-                                    />
-                                  </FontAwesome>
-                                </Icon>
-                              </ListViewIcon>
-                            </div>
-                          </ListViewLeft>
-                          <ListViewBody>
-                            <div
-                              className="list-view-pf-body"
-                            >
-                              <ListViewDescription>
-                                <div
-                                  className="list-view-pf-description"
-                                >
-                                  <ListViewDescriptionHeading>
-                                    <div
-                                      className="list-group-item-heading"
-                                    >
-                                      Item without description
-                                    </div>
-                                  </ListViewDescriptionHeading>
-                                </div>
-                              </ListViewDescription>
-                            </div>
-                          </ListViewBody>
-                        </div>
-                      </ListViewMainInfo>
-                    </div>
+                                    Item without description
+                                  </div>
+                                </ListViewDescriptionHeading>
+                              </div>
+                            </ListViewDescription>
+                          </div>
+                        </ListViewBody>
+                      </div>
+                    </ListViewMainInfo>
                   </ListViewRow>
                 </div>
               </ListViewGroupItemHeader>
