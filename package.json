@@ -2,9 +2,9 @@
   "name": "MiqExperimentalUI",
   "version": "0.0.0",
   "scripts": {
-    "test": "jest app/javascript",
-    "test:watch": "jest app/javascript --watchAll",
-    "test:current": "jest app/javascript --watch",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:current": "jest --watch",
     "format":
       "prettier --single-quote --trailing-comma es5 --write 'app/javascript/**/*.js' '*.{js,json}'",
     "build": "yarn run format && yarn run lint",
